@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+            fontFamily:{
+                'garamond': ['EB Garamond', 'serif'],
+            },
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-green-300">
+    
+     
+    <header class="">
+        <nav class="ml-4">
+
+
+            <button class="toggler inline-flex items-center">
+                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-8 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
+
+               <img class="w-8 hidden closeicon" src="./img/icons8-prev-50.png" alt="">
+
+            </button>
+
+
+
+            <ul class="space-y-2 mt-6  mobilemenu hidden" >
+                <li class="flex space-x-2">
+                    <!--1st-->
+                    <!--first div flex-->
+                    <div class="flex flex-col  ">
+
+                           <a href="">
+                            <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                                <img class="w-10" src="./img/icons8-speaker-50.png" alt="">
+                             </div>
+                        
+
+                         
+                            <div class="bg-green-900 py-4 px rounded-lg rounded-t-none">
+                                <h2 class="text-white text-2xl font-garamond font-bold text-center">sound</h2>
+                                <p class="text-center font-bold font-garamond text-xl">Enable</p>
+                             </div>
+                           </a>   
+                    </div>
+
+
+                   <!---second div flex-->
+                    <div class="flex flex-col ">
+
+                        <a href="">
+                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                             <img class="w-10" src="./img/icons8-shake-phone-50.png" alt="">
+                          </div>
+                     
+
+                      
+                         <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
+                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Vibration</h2>
+                             <p class="text-center font-bold font-garamond text-xl">Enable</p>
+                          </div>
+                        </a>   
+                 </div>
+
+                </li>
+
+
+                <!---2nd-->
+                <li class="flex "> 
+                    <div class="flex col space-x-2">
+
+                        <a href="">
+                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                             <img class="w-10" src="./img/icons8-crescent-moon-50.png" alt="">
+                          </div>
+                     
+
+                      
+                         <div class="bg-green-900 py-4 px rounded-lg rounded-t-none">
+                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Night Mode</h2>
+                             <p class="text-center font-bold font-garamond text-xl">Disable</p>
+                          </div>
+                        </a>   
+
+
+                        <div class="flex flex-col  ">
+
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                                 <img class="w-10" src="./img/icons8-change-80.png" alt="">
+                              </div>
+                         
+ 
+                          
+                             <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
+                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Theme</h2>
+                                 <p class="text-center font-bold font-garamond text-xl">Default</p>
+                              </div>
+                            </a>   
+                     </div>
+                 </div>
+                </li>
+
+                
+                <!---3rd-->
+                <li class="flex "> 
+                    <div class="flex col space-x-2 ">
+
+                        <a href="">
+                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                             <img class="w-10" src="./img/icons8-doorbell-50.png" alt="">
+                          </div>
+                     
+
+                      
+                         <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none">
+                                <h2 class="text-white text-2xl font-garamond font-bold text-center">Smart touch</h2>
+                             <p class="text-center font-bold font-garamond text-xl">Disable</p>
+                          </div>
+                        </a>   
+
+
+                        <div class="flex flex-col  ">
+
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                                 <img class="w-10" src="./img/icons8-notification-50.png" alt="">
+                              </div>
+                         
+ 
+                          
+                             <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none">
+                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Notification</h2>
+                                 <p class="text-center font-bold font-garamond text-xl">Disable</p>
+                              </div>
+                            </a>   
+                     </div>
+                 </div>
+                </li>
+
+               <!--fourth-->
+               <li class="flex "> 
+                <div class="flex col  space-x-2">
+
+                    <a href="">
+                     <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                         <img class="w-10" src="./img/icons8-global-64.png" alt="">
+                      </div>
+                 
+
+                  
+                     <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
+                         <h2 class="text-white text-2xl font-garamond font-bold text-center">Language</h2>
+                         <p class="text-center font-bold font-garamond text-xl">En</p>
+                      </div>
+                    </a>   
+
+
+                    <div class="flex flex-col ">
+
+                        <a href="">
+                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
+                             <img class="w-10" src="./icons/icons8-share.svg" alt="">
+                          </div>
+                     
+
+                      
+                         <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
+                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Share</h2>
+                             <p class="text-center font-bold font-garamond text-xl">Share</p>
+                          </div>
+                        </a>   
+                 </div>
+             </div>
+            </li>
+
+                
+
+            
+
+                
+            </ul>
+
+            <div class="mt-6  flex-col space-y-8 submenu hidden">
+                <div>
+                  <a class="bg-yellow-500 px-20 py-4 rounded-lg font-garamond font-bold text-2xl" href="">Other Apps</a>
+                </div>
+      
+            <!-- <div class="flex flex-row bg-yellow-500 space-x-12 rounded-lg p">
+      
+               <div class="bg-yellow-500 rounded-lg ml-4">
+                  <p class="font-garamond font-bold text-xl">So far</p>
+                 <h2 class="text-4xl font-bold font-garamond">30</h2>
+                 <h1 class="font-garamond font-bold text-1xl">Dhikrs (Total)</h1>
+               </div>
+      
+              <div class="bg-yellow-200 justify-end">
+                  <img class="ml-32  mt-4 justify-end" src="./icons/icons8-share.svg" alt="">
+              </div>
+      
+             </div>  --->
+      
+                </div>
+
+
+        </nav>
+    </header>
+
+
+   ehbh
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
