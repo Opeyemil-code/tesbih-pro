@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href=" https://unpkg.com/@mui/material@latest/umd/material-ui.development.js">
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -32,12 +33,19 @@
         <nav class="ml-4">
 
 
-            <button class="toggler inline-flex items-center">
-                <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-8 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
+            <div class="flex bg-green-600 w-4/5 ml-8 rounded-b-lg pb-4">
+                <button class="toggler inline-flex items-center ml-4">
+                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-6 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
+    
+                   <img class="w-8 hidden closeicon" src="./img/icons8-prev-50.png" alt="">
+    
+                </button>
 
-               <img class="w-8 hidden closeicon" src="./img/icons8-prev-50.png" alt="">
-
-            </button>
+                <button class="ml-28 mt-2 text-xl border bg-green-400 px-4 rounded-lg">
+                    Saved Dhikrs
+                </button>
+              
+            </div>
 
 
 
@@ -224,8 +232,47 @@
     </header>
 
 
-   ehbh
+   <section class="mt-6">
+        <div  class="bg-green-800 w-9/12 rounded-full py-20 mx-auto">
+            <div class="bg-black px- w-10/12 py-20 rounded-ful mx-auto">
+                <div class="flex flex-col">
+                    <div class="mx-auto  bg-green-400  rounded-lg">
+                        <h4 class="flex space-x-2 text-6xl">
+                            <span class="opacity-20">0</span>
+                            <span  class="opacity-20">0</span>
+                            <span   class="opacity-20">0</span>
+                            <span  class="opacity-20">0</span>
+                            <span>0</span>
+                        </h4>
+                    </div>
 
+
+                    <div class="flex space-x-32   mt-6 w-10/12 mx-auto ">
+                        <svg class="bg-white ml-6" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 3 A 1.0001 1.0001 0 1 0 15 5 C 20.534534 5 25 9.4654664 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 C 5 12.650241 5.8085376 10.496834 7.1601562 8.7929688 L 9 11 L 11 4 L 4 5 L 5.8671875 7.2402344 C 4.086665 9.3350655 3 12.041787 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z"/></svg>
+
+
+                        <button class="bg-white rounded-full ">
+                           <p class="text-white">ope</p>
+                        </button>
+
+                    </div>
+
+                </div>
+
+                
+                <div class="flex">
+                    <button class="mx-auto bg-white rounded-full py-12 px-12 mt-4">
+                        <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="16" height="16"
+viewBox="0 0 16 16"
+style=" fill:#000000;"><path d="M 6.5 1 C 5.675781 1 5 1.675781 5 2.5 L 5.003906 8.882813 L 3.5625 7.4375 C 2.980469 6.855469 2.019531 6.859375 1.4375 7.4375 C 0.855469 8.019531 0.859375 8.980469 1.4375 9.5625 L 5.03125 13.152344 C 6.214844 14.335938 7.824219 15.003906 9.5 15 C 11.980469 15 14 12.980469 14 10.5 L 14 7.5 C 14 6.675781 13.324219 6 12.5 6 C 12.304688 6 12.113281 6.039063 11.941406 6.109375 C 11.765625 5.476563 11.1875 5 10.5 5 C 10.117188 5 9.765625 5.152344 9.5 5.390625 C 9.234375 5.152344 8.882813 5 8.5 5 C 8.324219 5 8.15625 5.039063 8 5.09375 L 8 2.5 C 8 1.675781 7.324219 1 6.5 1 Z M 6.5 2 C 6.78125 2 7 2.21875 7 2.5 L 7 8 L 8 8 L 8 6.5 C 8 6.21875 8.21875 6 8.5 6 C 8.78125 6 9 6.21875 9 6.5 L 9 8 L 10 8 L 10 6.5 C 10 6.21875 10.21875 6 10.5 6 C 10.78125 6 11 6.21875 11 6.5 L 11 8 L 12 8 L 12 7.5 C 12 7.21875 12.21875 7 12.5 7 C 12.78125 7 13 7.21875 13 7.5 L 13 10.5 C 13 12.441406 11.441406 14 9.5 14 C 8.089844 14.003906 6.734375 13.441406 5.734375 12.441406 L 2.148438 8.851563 C 1.945313 8.652344 1.945313 8.34375 2.148438 8.148438 C 2.347656 7.945313 2.65625 7.945313 2.851563 8.148438 L 6.003906 11.296875 L 6 2.5 C 6 2.21875 6.21875 2 6.5 2 Z"></path></svg>
+                    </button>
+                </div>
+            </div>
+
+            
+        </div>
+   </section>
 
 
 
