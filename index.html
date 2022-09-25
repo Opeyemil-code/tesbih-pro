@@ -8,11 +8,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href=" https://unpkg.com/@mui/material@latest/umd/material-ui.development.js">
+ 
+
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
+        darkMode : 'class',
       theme: {
         extend: {
             fontFamily:{
@@ -20,297 +22,310 @@
             },
           colors: {
             clifford: '#da373d',
-          }
+            ownblack: '#181830'
+
+          },
         }
       }
     }
   </script>
 </head>
-<body class="bg-green-300">
+   
+
+    <body class="">
+
+        <div class="bg-green-300 dark:bg-ownblack pb-20">
+
+         <header class="">
+            <nav class="ml-4 ">
     
-     
-    <header class="">
-        <nav class="ml-4">
-
-
-            <div class="flex bg-green-600 w-4/5 ml-8 rounded-b-lg pb-4">
-                <button class="toggler inline-flex items-center ml-4">
-                    <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-6 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
     
-                   <img class="w-8 hidden closeicon" src="./img/icons8-prev-50.png" alt="">
-    
-                </button>
-
-                <button class="ml-28 mt-2 text-xl border bg-green-400 px-4 rounded-lg">
-                    Saved Dhikrs
-                </button>
-              
-            </div>
-
-
-
-            <ul class="space-y-2 mt-6  mobilemenu hidden" >
-                <li class="flex space-x-2">
-                    <!--1st-->
-                    <!--first div flex-->
-                    <div class="flex flex-col  ">
-
-                           <a href="">
-                            <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                                <img class="w-10" src="./img/icons8-speaker-50.png" alt="">
-                             </div>
-                        
-
-                         
-                            <div class="bg-green-900 py-4 px rounded-lg rounded-t-none">
-                                <h2 class="text-white text-2xl font-garamond font-bold text-center">sound</h2>
-                                <p class="text-center font-bold font-garamond text-xl">Enable</p>
-                             </div>
-                           </a>   
-                    </div>
-
-
-                   <!---second div flex-->
-                    <div class="flex flex-col ">
-
-                        <a href="">
-                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                             <img class="w-10" src="./img/icons8-shake-phone-50.png" alt="">
-                          </div>
-                     
-
-                      
-                         <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
-                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Vibration</h2>
-                             <p class="text-center font-bold font-garamond text-xl">Enable</p>
-                          </div>
-                        </a>   
-                 </div>
-
-                </li>
-
-
-                <!---2nd-->
-                <li class="flex "> 
-                    <div class="flex col space-x-2">
-
-                        <a href="">
-                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                             <img class="w-10" src="./img/icons8-crescent-moon-50.png" alt="">
-                          </div>
-                     
-
-                      
-                         <div class="bg-green-900 py-4 px rounded-lg rounded-t-none">
-                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Night Mode</h2>
-                             <p class="text-center font-bold font-garamond text-xl">Disable</p>
-                          </div>
-                        </a>   
-
-
-                        <div class="flex flex-col  ">
-
-                            <a href="">
-                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                                 <img class="w-10" src="./img/icons8-change-80.png" alt="">
-                              </div>
-                         
- 
-                          
-                             <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
-                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Theme</h2>
-                                 <p class="text-center font-bold font-garamond text-xl">Default</p>
-                              </div>
-                            </a>   
-                     </div>
-                 </div>
-                </li>
-
-                
-                <!---3rd-->
-                <li class="flex "> 
-                    <div class="flex col space-x-2 ">
-
-                        <a href="">
-                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                             <img class="w-10" src="./img/icons8-doorbell-50.png" alt="">
-                          </div>
-                     
-
-                      
-                         <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none">
-                                <h2 class="text-white text-2xl font-garamond font-bold text-center">Smart touch</h2>
-                             <p class="text-center font-bold font-garamond text-xl">Disable</p>
-                          </div>
-                        </a>   
-
-
-                        <div class="flex flex-col  ">
-
-                            <a href="">
-                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                                 <img class="w-10" src="./img/icons8-notification-50.png" alt="">
-                              </div>
-                         
- 
-                          
-                             <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none">
-                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Notification</h2>
-                                 <p class="text-center font-bold font-garamond text-xl">Disable</p>
-                              </div>
-                            </a>   
-                     </div>
-                 </div>
-                </li>
-
-               <!--fourth-->
-               <li class="flex "> 
-                <div class="flex col  space-x-2">
-
-                    <a href="">
-                     <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                         <img class="w-10" src="./img/icons8-global-64.png" alt="">
-                      </div>
-                 
-
-                  
-                     <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
-                         <h2 class="text-white text-2xl font-garamond font-bold text-center">Language</h2>
-                         <p class="text-center font-bold font-garamond text-xl">En</p>
-                      </div>
-                    </a>   
-
-
-                    <div class="flex flex-col ">
-
-                        <a href="">
-                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg">
-                             <img class="w-10" src="./icons/icons8-share.svg" alt="">
-                          </div>
-                     
-
-                      
-                         <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none">
-                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Share</h2>
-                             <p class="text-center font-bold font-garamond text-xl">Share</p>
-                          </div>
-                        </a>   
-                 </div>
-             </div>
-            </li>
-
-                
-
-            
-
-                
-            </ul>
-
-            <div class="mt-6  flex-col space-y-8 submenu hidden">
-                <div>
-                  <a class="bg-yellow-500 px-20 py-4 rounded-lg font-garamond font-bold text-2xl" href="">Other Apps</a>
-                </div>
-      
-            <!-- <div class="flex flex-row bg-yellow-500 space-x-12 rounded-lg p">
-      
-               <div class="bg-yellow-500 rounded-lg ml-4">
-                  <p class="font-garamond font-bold text-xl">So far</p>
-                 <h2 class="text-4xl font-bold font-garamond">30</h2>
-                 <h1 class="font-garamond font-bold text-1xl">Dhikrs (Total)</h1>
-               </div>
-      
-              <div class="bg-yellow-200 justify-end">
-                  <img class="ml-32  mt-4 justify-end" src="./icons/icons8-share.svg" alt="">
-              </div>
-      
-             </div>  --->
-      
-                </div>
-
-
-        </nav>
-    </header>
-
-
-   <section class="mt-6">
-        <div  class="bg-green-800 w-9/12 rounded-full py-20 mx-auto">
-            <div class="bg-black px- w-10/12 py-20 rounded-ful mx-auto">
-                <div class="flex flex-col">
-                    <div class="mx-auto  bg-green-400  rounded-lg">
-                        <h4 class="flex space-x-2 text-6xl">
-                            <span class="opacity-20">0</span>
-                            <span  class="opacity-20">0</span>
-                            <span   class="opacity-20">0</span>
-                            <span  class="opacity-20">0</span>
-                            <span>0</span>
-                        </h4>
-                    </div>
-
-
-                    <div class="flex space-x-32   mt-6 w-10/12 mx-auto ">
-                        <svg class="bg-white ml-6 rounded-full" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 3 A 1.0001 1.0001 0 1 0 15 5 C 20.534534 5 25 9.4654664 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 C 5 12.650241 5.8085376 10.496834 7.1601562 8.7929688 L 9 11 L 11 4 L 4 5 L 5.8671875 7.2402344 C 4.086665 9.3350655 3 12.041787 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z"/></svg>
-
-
-                        <button class="bg-white rounded-full ">
-                           <p class="text-white">ope</p>
-                        </button>
-
-                    </div>
-
-                </div>
-
-                
-                <div class="flex">
-                    <button class="mx-auto bg-white rounded-full py-12 px-12 mt-4">
-                        <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="16" height="16"
-viewBox="0 0 16 16"
-style=" fill:#000000;"><path d="M 6.5 1 C 5.675781 1 5 1.675781 5 2.5 L 5.003906 8.882813 L 3.5625 7.4375 C 2.980469 6.855469 2.019531 6.859375 1.4375 7.4375 C 0.855469 8.019531 0.859375 8.980469 1.4375 9.5625 L 5.03125 13.152344 C 6.214844 14.335938 7.824219 15.003906 9.5 15 C 11.980469 15 14 12.980469 14 10.5 L 14 7.5 C 14 6.675781 13.324219 6 12.5 6 C 12.304688 6 12.113281 6.039063 11.941406 6.109375 C 11.765625 5.476563 11.1875 5 10.5 5 C 10.117188 5 9.765625 5.152344 9.5 5.390625 C 9.234375 5.152344 8.882813 5 8.5 5 C 8.324219 5 8.15625 5.039063 8 5.09375 L 8 2.5 C 8 1.675781 7.324219 1 6.5 1 Z M 6.5 2 C 6.78125 2 7 2.21875 7 2.5 L 7 8 L 8 8 L 8 6.5 C 8 6.21875 8.21875 6 8.5 6 C 8.78125 6 9 6.21875 9 6.5 L 9 8 L 10 8 L 10 6.5 C 10 6.21875 10.21875 6 10.5 6 C 10.78125 6 11 6.21875 11 6.5 L 11 8 L 12 8 L 12 7.5 C 12 7.21875 12.21875 7 12.5 7 C 12.78125 7 13 7.21875 13 7.5 L 13 10.5 C 13 12.441406 11.441406 14 9.5 14 C 8.089844 14.003906 6.734375 13.441406 5.734375 12.441406 L 2.148438 8.851563 C 1.945313 8.652344 1.945313 8.34375 2.148438 8.148438 C 2.347656 7.945313 2.65625 7.945313 2.851563 8.148438 L 6.003906 11.296875 L 6 2.5 C 6 2.21875 6.21875 2 6.5 2 Z"></path></svg>
+                <div class="flex bg-green-600 w-4/5 ml-8 rounded-b-lg pb-4 sdhikr dark:bg-gray-700 shadow-xl">
+                    <button class="toggler inline-flex items-center ml-4">
+                        <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-6 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
+        
+                       <img class="w-8 hidden closeicon" src="./img/icons8-prev-50.png" alt="">
+        
                     </button>
+    
+                    <button class="ml-28 mt-2 text-xl border bg-green-400 px-4 rounded-lg sdhikr dark:bg-gray-800 dark:text-white">
+                        Saved Dhikrs
+                    </button>
+                  
                 </div>
+    
+    
+    
+                <ul class="space-y-2 mt-6  mobilemenu hidden ml-4 " >
+                    <li class="flex space-x-2 ">
+                        <!--1st-->
+                        <!--first div flex-->
+                        <div class="flex flex-col">
+    
+                               <a href="">
+                                <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                    <img class="w-10" src="./img/icons8-speaker-50.png" alt="">
+                                 </div>
+                            
+    
+                             
+                                <div class="bg-green-900 py-4 px rounded-lg rounded-t-none dark:bg-gray-800">
+                                    <h2 class="text-white text-2xl font-garamond font-bold text-center">sound</h2>
+                                    <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Enable</p>
+                                 </div>
+                               </a>   
+                        </div>
+    
+    
+                       <!---second div flex-->
+                        <div class="flex flex-col ">
+    
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                 <img class="w-10" src="./img/icons8-shake-phone-50.png" alt="">
+                              </div>
+                         
+    
+                          
+                             <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none dark:bg-gray-800">
+                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Vibration</h2>
+                                 <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Enable</p>
+                              </div>
+                            </a>   
+                     </div>
+    
+                    </li>
+    
+    
+                    <!---2nd-->
+                    <li class="flex "> 
+                        <div class="flex col space-x-2">
+    
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                 <img class="w-10" src="./img/icons8-crescent-moon-50.png" alt="">
+                              </div>
+                         
+    
+                          
+                             <div class="bg-green-900 py-4 px rounded-lg rounded-t-none dark:bg-gray-800">
+                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Night Mode</h2>
+                                 <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Disable</p>
+                              </div>
+                            </a>   
+    
+    
+                            <div class="flex flex-col  ">
+    
+                                <a href="">
+                                 <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                     <img class="w-10" src="./img/icons8-change-80.png" alt="">
+                                  </div>
+                             
+     
+                              
+                                 <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none dark:bg-gray-800">
+                                     <h2 class="text-white text-2xl font-garamond font-bold text-center">Theme</h2>
+                                     <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Default</p>
+                                  </div>
+                                </a>   
+                         </div>
+                     </div>
+                    </li>
+    
+                    
+                    <!---3rd-->
+                    <li class="flex "> 
+                        <div class="flex col space-x-2 ">
+    
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                 <img class="w-10" src="./img/icons8-doorbell-50.png" alt="">
+                              </div>
+                         
+    
+                          
+                             <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none dark:bg-gray-800">
+                                    <h2 class="text-white text-2xl font-garamond font-bold text-center">Smart touch</h2>
+                                 <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Disable</p>
+                              </div>
+                            </a>   
+    
+    
+                            <div class="flex flex-col  ">
+    
+                                <a href="">
+                                 <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                     <img class="w-10" src="./img/icons8-notification-50.png" alt="">
+                                  </div>
+                             
+     
+                              
+                                 <div class="bg-green-900 py-4 px-1 rounded-lg rounded-t-none dark:bg-gray-800">
+                                     <h2 class="text-white text-2xl font-garamond font-bold text-center">Notification</h2>
+                                     <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Disable</p>
+                                  </div>
+                                </a>   
+                         </div>
+                     </div>
+                    </li>
+    
+                   <!--fourth-->
+                   <li class="flex "> 
+                    <div class="flex col  space-x-2">
+    
+                        <a href="">
+                         <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                             <img class="w-10" src="./img/icons8-global-64.png" alt="">
+                          </div>
+                     
+    
+                      
+                         <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none dark:bg-gray-800">
+                             <h2 class="text-white text-2xl font-garamond font-bold text-center">Language</h2>
+                             <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">En</p>
+                          </div>
+                        </a>   
+    
+    
+                        <div class="flex flex-col ">
+    
+                            <a href="">
+                             <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-gray-500">
+                                 <img class="w-10" src="./icons/icons8-share.svg" alt="">
+                              </div>
+                         
+    
+                          
+                             <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none dark:bg-gray-800">
+                                 <h2 class="text-white text-2xl font-garamond font-bold text-center">Share</h2>
+                                 <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">Share</p>
+                              </div>
+                            </a>   
+                     </div>
+                 </div>
+                </li>
+    
+                    
+    
+                
+    
+                    
+                </ul>
+    
+                <div class="mt-6  flex-col space-y-8 submenu hidden">
+                    <div>
+                      <a class="bg-yellow-500 px-20 py-4 rounded-lg font-garamond font-bold text-2xl" href="">Other Apps</a>
+                    </div>
+          
+                <!-- <div class="flex flex-row bg-yellow-500 space-x-12 rounded-lg p">
+          
+                   <div class="bg-yellow-500 rounded-lg ml-4">
+                      <p class="font-garamond font-bold text-xl">So far</p>
+                     <h2 class="text-4xl font-bold font-garamond">30</h2>
+                     <h1 class="font-garamond font-bold text-1xl">Dhikrs (Total)</h1>
+                   </div>
+          
+                  <div class="bg-yellow-200 justify-end">
+                      <img class="ml-32  mt-4 justify-end" src="./icons/icons8-share.svg" alt="">
+                  </div>
+          
+                 </div>  --->
+          
+                    </div>
+    
+    
+            </nav>
+        </header>
+    
+    
+       <section class="mt-6 firstSection">
+            <div  class="bg-green-800 w-9/12 rounded-full py-20 mx-auto dark:bg-gray-600 bigcircle shadow-2xl">
+                <div class="bg-black px- w-10/12 py-20 rounded-ful mx-auto dark:bg-gray-900 counter">
+                    <div class="flex flex-col">
+                        <div class="mx-auto  bg-green-400  rounded-lg calcnumber dark:bg-white">
+                            <h4 class="flex space-x-2 text-6xl">
+                                <span class="opacity-20">0</span>
+                                <span  class="opacity-20">0</span>
+                                <span   class="opacity-20">0</span>
+                                <span  class="opacity-20">0</span>
+                                <span>0</span>
+                            </h4>
+                        </div>
+    
+    
+                        <div class="flex space-x-32   mt-6 w-10/12 mx-auto ">
+                           <button>
+                            <svg class="bg-white ml-6 rounded-full" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 3 A 1.0001 1.0001 0 1 0 15 5 C 20.534534 5 25 9.4654664 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 C 5 12.650241 5.8085376 10.496834 7.1601562 8.7929688 L 9 11 L 11 4 L 4 5 L 5.8671875 7.2402344 C 4.086665 9.3350655 3 12.041787 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z"/></svg>
+                           </button>
+    
+    
+                            <button class="bg-white rounded-full ">
+                               <p class="text-white">ope</p>
+                            </button>
+    
+                        </div>
+    
+                    </div>
+    
+                    
+                    <div class="flex">
+                        <button class="mx-auto bg-white rounded-full py-12 px-12 mt-4">
+                            <svg class="" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    width="16" height="16"
+    viewBox="0 0 16 16"
+    style=" fill:#000000;"><path d="M 6.5 1 C 5.675781 1 5 1.675781 5 2.5 L 5.003906 8.882813 L 3.5625 7.4375 C 2.980469 6.855469 2.019531 6.859375 1.4375 7.4375 C 0.855469 8.019531 0.859375 8.980469 1.4375 9.5625 L 5.03125 13.152344 C 6.214844 14.335938 7.824219 15.003906 9.5 15 C 11.980469 15 14 12.980469 14 10.5 L 14 7.5 C 14 6.675781 13.324219 6 12.5 6 C 12.304688 6 12.113281 6.039063 11.941406 6.109375 C 11.765625 5.476563 11.1875 5 10.5 5 C 10.117188 5 9.765625 5.152344 9.5 5.390625 C 9.234375 5.152344 8.882813 5 8.5 5 C 8.324219 5 8.15625 5.039063 8 5.09375 L 8 2.5 C 8 1.675781 7.324219 1 6.5 1 Z M 6.5 2 C 6.78125 2 7 2.21875 7 2.5 L 7 8 L 8 8 L 8 6.5 C 8 6.21875 8.21875 6 8.5 6 C 8.78125 6 9 6.21875 9 6.5 L 9 8 L 10 8 L 10 6.5 C 10 6.21875 10.21875 6 10.5 6 C 10.78125 6 11 6.21875 11 6.5 L 11 8 L 12 8 L 12 7.5 C 12 7.21875 12.21875 7 12.5 7 C 12.78125 7 13 7.21875 13 7.5 L 13 10.5 C 13 12.441406 11.441406 14 9.5 14 C 8.089844 14.003906 6.734375 13.441406 5.734375 12.441406 L 2.148438 8.851563 C 1.945313 8.652344 1.945313 8.34375 2.148438 8.148438 C 2.347656 7.945313 2.65625 7.945313 2.851563 8.148438 L 6.003906 11.296875 L 6 2.5 C 6 2.21875 6.21875 2 6.5 2 Z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+    
+                
             </div>
-
-            
+    
+    
+       </section>
+    
+    
+    
+    
+      <section class="mt-12 ">
+        <div class="bg-green-400 flex flex-row w-10/12 mx-auto space-x-6 rounded-full p-2 tab dark:bg-gray-700">
+            <div class="ml-8 hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+              <button class="border-r-2 border-black px-2 soundBtn">
+                <img class="w-8" src="./img/icons8-speaker-50.png" alt="">
+              </button>
+            </div>
+    
+            <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+                <button class="border-r-2 border-black px-2 silenceBtn">
+                  <img class="w-8" src="./img/icons8-shake-phone-50.png" alt="">
+                </button>
+              </div>
+    
+              <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+                <button class="border-r-2 border-black px-2 nightBtn">
+                  <img class="w-8" src="./img/icons8-crescent-moon-50.png" alt="">
+                </button>
+              </div>
+    
+              <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+                <button class="colorBtn">
+                  <img class="w-8" src="./img/icons8-notification-50.png" alt="">
+                </button>
+              </div>
         </div>
+      </section>
+    
+    
 
 
-   </section>
+        
+    
+    
+    
+        <script src="./script.js"></script>
+    </body>
 
 
-
-
-  <section class="mt-12 ">
-    <div class="bg-green-400 flex flex-row w-10/12 mx-auto space-x-6 rounded-full p-2">
-        <div class="ml-4 hover:bg-green-700 hover:rounded-lg transition duration-700">
-          <button class="border-r-2 border-black px-2">
-            <img class="w-8" src="./img/icons8-speaker-50.png" alt="">
-          </button>
-        </div>
-
-        <div class="hover:bg-green-700 hover:rounded-lg transition duration-700">
-            <button class="border-r-2 border-black px-2">
-              <img class="w-8" src="./img/icons8-shake-phone-50.png" alt="">
-            </button>
-          </div>
-
-          <div class="hover:bg-green-700 hover:rounded-lg transition duration-700">
-            <button class="border-r-2 border-black px-2">
-              <img class="w-8" src="./img/icons8-crescent-moon-50.png" alt="">
-            </button>
-          </div>
-
-          <div class="hover:bg-green-700 hover:rounded-lg transition duration-700">
-            <button>
-              <img class="w-8" src="./img/icons8-notification-50.png" alt="">
-            </button>
-          </div>
-    </div>
-  </section>
-
-
-
-
-
-    <script src="./script.js"></script>
-</body>
+   
 </html>
