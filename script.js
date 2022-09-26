@@ -39,15 +39,10 @@ for (let i = 0; i < nightModeBtn.length; i++) {
 
 
 
-//This is for changing to different colors
+//THIS IS FOR CHANGING DIFFERENT BACKGROUND COLOR
 const diffColors = [
     '#470000','#ffbfbf','#4d4dff', 'purple','green'
 ];
-
-
-
-
-
 
 
 let numCounter = 0
