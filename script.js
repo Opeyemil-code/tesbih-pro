@@ -26,12 +26,11 @@ toggleBtn.addEventListener('click', toggleMenu)
 
 
 //THIS IS FOR THE NIGHT MODE BUTTON
-nightModeBtn.addEventListener(
-    'click', function (params) {
-      body.classList.toggle('dark')
-        topNav.classList.toggle('dark')
-        circle.classList.toggle('dark')
-        counter.classList.toggle('dark')
-        number.classList.toggle('dark')
-    }
-)
+for (let i = 0; i < nightModeBtn.length; i++) {
+    nightModeBtn[i].addEventListener(
+        'click', function name(params) {
+            body.classList.toggle('dark')
+        }
+    )
+    
+}
