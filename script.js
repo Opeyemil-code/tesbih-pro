@@ -50,48 +50,92 @@ for (let i = 0; i < nightModeBtn.length; i++) {
 
 
 //THIS IS FOR CHANGING DIFFERENT BACKGROUND COLOR
+
+const lightColors =[
+    '#770000','#ffe5e5','#7b7bff', '#ff85ff', '#7dff7d'
+];
+
 const diffColors = [
     '#470000','#ffbfbf','#4d4dff', 'purple','green'
 ];
 
+let numCounter=0
+console.log(numCounter)
+function secondaryChange(params) {
+    for (let i = 0; i < bgchange.length; i++) {
+        bgchange[i].style.backgroundColor = diffColors[numCounter]
+        
+    }
 
-const lightColors =[
-    '#770000','#ffe5e5','#7b7bff', '#ff85ff', '#7dff7d'
-]
+    for (let i = 0; i < bgLightChange.length; i++) {
+          bgLightChange[i].style.backgroundColor = lightColors[numCounter]
+}
+  
 
-let numCounter = 0
+} 
 
-function backGroundChange() {
-    if (numCounter <= diffColors.length+1) {
-        document.querySelector('.subbody').style.backgroundColor = diffColors[numCounter];
-        document.querySelector('.bigcircle').style.backgroundColor  = diffColors[numCounter];
+//NEW FUNCTION
+function setter() {
+    document.querySelector('.subbody').style.backgroundColor = diffColors[numCounter]
+       document.querySelector('.bigcircle').style.backgroundColor  = diffColors[numCounter];
         document.querySelector('.tab').style.backgroundColor  = diffColors[numCounter];
         document.querySelector('.sdhikr').style.backgroundColor  = diffColors[numCounter];
         document.querySelector('.counter').style.backgroundColor  = diffColors[numCounter];
         document.querySelector('.calcnumber').style.backgroundColor  = 'white';
-        document.querySelector('.saved').style.backgroundColor = diffColors[numCounter]
+        document.querySelector('.saved').style.backgroundColor = diffColors[numCounter] 
 
-        for (let i = 0; i < bgchange.length; i++) {
-            bgchange[i].style.backgroundColor = diffColors[numCounter]
-            
-        }
+        secondaryChange()
+     
+}   
 
-        for (let i = 0; i < bgLightChange.length; i++) {
-            bgLightChange[i].style.backgroundColor = lightColors[numCounter];
-            
-        }
-       
 
+
+function backGroundChange() {
+    if (numCounter < diffColors.length-1) {
+        numCounter++
+        setter()
+      
+        
     } 
+    else{
+        
+        numCounter = 0
+        setter()
+        console.log(numCounter)
+    }
+}  
 
-    numCounter++
-}
+
+
 
 for (let i = 0; i < changeColorbtn.length; i++) {
     changeColorbtn[i].addEventListener(
-        'click', backGroundChange)
+        'click', backGroundChange
+    )
     
-    }
+}
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -120,6 +164,7 @@ deact.addEventListener(
     'click', reset
     
 )
+
 
 
 
