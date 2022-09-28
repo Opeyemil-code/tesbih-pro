@@ -22,6 +22,9 @@ const numCount = document.querySelector('.numcount')
 const counterBtn = document.querySelector('.presscount')
 const deact = document.querySelector('.deactivate')
 const reverseBtn = document.querySelector('.reverseBtn')
+const confirmCount = document.querySelector('.confirmCount')
+const confirmButton = document.querySelector('.confirmButton')
+const opeyemi = document.querySelector('.opeyemi')
 
 
 //THIS IS FOR THE MENU
@@ -136,29 +139,6 @@ for (let i = 0; i < changeColorbtn.length; i++) {
 
 
 
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //FUNCTIONALITY FOR THE COUNTER BUTTON
 
 /***********************************************
@@ -201,6 +181,25 @@ reverseBtn.addEventListener(
     'click', reverse
 )
 
+
+
+
+//FUNCTIONALITY FOR SETTING A FIGURE
+
+/***********************************************
+ * *********************************************
+ */
+
+function matchFigure(params) {
+    if (confirmCount = number) {
+        opeyemi.classList.remove('hidden')
+    }
+}
+
+
+confirmButton.addEventListener(
+    'click', matchFigure
+)
 
 
 
