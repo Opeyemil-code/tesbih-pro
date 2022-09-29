@@ -12,19 +12,23 @@ const body = document.querySelector('body')
 const topNav = document.querySelector('.sdhikr')
 const circle = document.querySelector('.bigcircle')
 const counter = document.querySelector('.counter')
-const number= document.querySelector('.calcnumber')
+const number = document.querySelector('.calcnumber')
 const controlTab = document.querySelector('.tab')
 const divBody = document.querySelector('.subbody')
 const savedDhikr = document.querySelector('.saved')
 const bgchange = document.querySelectorAll('.bgchange')
 const bgLightChange = document.querySelectorAll('.light')
-const numCount = document.querySelector('.numcount')
+const numCount = document.querySelector('.numcount').textContent
 const counterBtn = document.querySelector('.presscount')
 const deact = document.querySelector('.deactivate')
 const reverseBtn = document.querySelector('.reverseBtn')
 const confirmCount = document.querySelector('.confirmCount')
 const confirmButton = document.querySelector('.confirmButton')
 const opeyemi = document.querySelector('.opeyemi')
+const modal = document.querySelector('.modal')
+
+console.log(typeof numCount)
+
 
 
 //THIS IS FOR THE MENU
@@ -84,6 +88,7 @@ let numCounter = 0
 function secondaryChange(params) {
     for (let i = 0; i < bgLightChange.length; i++) {
         bgLightChange[i].style.backgroundColor = lightColors[numCounter]   
+       
     }
 
     for (let i = 0; i < bgchange.length; i++) {
@@ -107,6 +112,8 @@ function setter(params) {
      
      secondaryChange()
 }
+
+
 
 
 //LOOP FOR ELEMENT TO BE CHANGED
@@ -149,6 +156,7 @@ let count = 0;
 function handler(params) {
     count++
     document.querySelector('.numcount').textContent = count; 
+    console.log(numCount)
 }
 
 counterBtn.addEventListener(
@@ -172,7 +180,7 @@ deact.addEventListener(
 
 function reverse(params) {
     count--
-    document.querySelector('.numcount').textContent = count
+    document.querySelector('.numcount').textContent = count;
     
  }
 
@@ -191,8 +199,10 @@ reverseBtn.addEventListener(
  */
 
 function matchFigure(params) {
-    if (confirmCount = number) {
-        opeyemi.classList.remove('hidden')
+    console.log(confirmCount)
+    console.log(numCount)
+    if (confirmCount == numCount) {
+        modal.classList.remove('hidden')
     }
 }
 
@@ -200,9 +210,6 @@ function matchFigure(params) {
 confirmButton.addEventListener(
     'click', matchFigure
 )
-
-
-
 
 
 
