@@ -155,7 +155,7 @@ let count = 0;
 
 function handler(params) {
     count++
-    document.querySelector('.numcount').textContent = count; 
+    document.querySelector('.numcount').textContent = count 
     console.log(numCount)
 }
 
@@ -181,6 +181,7 @@ deact.addEventListener(
 function reverse(params) {
     count--
     document.querySelector('.numcount').textContent = count;
+   
     
  }
 
@@ -199,8 +200,6 @@ reverseBtn.addEventListener(
  */
 
 function matchFigure(params) {
-    console.log(confirmCount)
-    console.log(numCount)
     if (confirmCount == numCount) {
         modal.classList.remove('hidden')
     }
@@ -208,7 +207,7 @@ function matchFigure(params) {
 
 
 confirmButton.addEventListener(
-    'click', matchFigure
+    'click', matchFigure.textContent
 )
 
 

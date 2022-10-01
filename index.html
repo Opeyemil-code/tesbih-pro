@@ -40,7 +40,7 @@
             <nav class="ml-4">
     
     
-                <div class="flex bg-green-600 w-4/5 mx-auto rounded-b-lg pb-4 sdhikr dark:bg-zinc-900 shadow-xl">
+                <div class="flex bg-green-600 w-4/5 lg:w-1/4 mx-auto rounded-b-lg pb-4 sdhikr dark:bg-zinc-900 shadow-xl">
                     <button class="toggler inline-flex items-center ml-4">
                         <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" class="w-6 openIcon"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg> 
         
@@ -52,15 +52,15 @@
                         
                     </button> --->
 
-                    <div class="mx-auto mt-2 font-garamond font-bold  border bg-green-400 px-4 rounded-lg sdhikr dark:bg-zinc-900 dark:text-white saved flex flex-col">
-                        <h2 class="mx-auto">
-                            set a desired figured 
+                   <div class="mx-auto mt-2 font-garamond font-bold  border bg-green-400 px-4 rounded-lg sdhikr dark:bg-zinc-900 dark:text-white saved flex flex-col">
+                        <h2 class="mx-aut mt-2 text-xl font-garamond">
+                           Supplications Counter 
                         </h2>
-                        <input type="number" name="" id="" class="confirmCount"> 
+                     <!---   <input type="number" name="" id="" class="confirmCount"> 
                         <button class="border rounded-b-lg sdhikr  confirmButton shadow-black shadow-sm">
                             <p>confirmed</p>
-                        </button>
-                    </div>
+                        </button>--->
+                    </div>  
                   
                  
 
@@ -196,7 +196,7 @@
                    <li class="flex "> 
                     <div class="flex col  space-x-2 ">
     
-                        <a href="">
+                        <button href="">
                          <div class="bg-green-500 py-4 px-16 rounded-b-none rounded-t-lg dark:bg-zinc-500 light shadow-2xl">
                              <img class="w-10" src="./img/icons8-global-64.png" alt="">
                           </div>
@@ -205,9 +205,18 @@
                       
                          <div class="bg-green-900 py-4 px- rounded-lg rounded-t-none dark:bg-zinc-900 bgchange shadow-2xl">
                              <h2 class="text-white text-2xl font-garamond font-bold text-center">Language</h2>
-                             <p class="text-center font-bold font-garamond text-xl dark:text-gray-100">En</p>
+                             <div class="flex">
+                              <select class="mx-auto bg-transparent font-garamond text-xl font-bold" name="size" id="size-select">
+                                <option value="6">English</option>
+                                <option value="6.5" disabled>Arabic</option>
+                                <option value="7" disabled>Italy</option>
+                                <option value="7" disabled>Espanyol</option>
+                                <option value="8" disabled>Dutch</option>
+                                <option value="9" disabled>France</option>
+                            </select>
+                             </div>
                           </div>
-                        </a>   
+                        </button>   
     
     
                         <div class="flex flex-col ">
@@ -237,8 +246,8 @@
 
                </div>
     
-                <div class="mt-6  flex-col space-y-8 submenu hidden">
-                    <div>
+                <div class="mt-6  flex  space-y-8 submenu hidden">
+                    <div class="mx-auto">
                       <a class="bg-yellow-500 px-20 py-4 rounded-lg font-garamond font-bold text-2xl" href="">Other Apps</a>
                     </div>
           
@@ -264,7 +273,7 @@
     
     
        <section class="mt-6 firstSection">
-            <div  class="bg-green-400 w-9/12 rounded-full py-20 mx-auto dark:bg-zinc-700 bigcircle shadow-2xl">
+            <div  class="bg-green-400 w-9/12 lg:w-3/4 rounded-full py-20 mx-auto dark:bg-zinc-700 bigcircle shadow-2xl">
                 <div class="bg-black px- w-10/12 py-20 rounded-ful mx-auto dark:bg-gray-900 counter">
                     <div class="flex flex-col">
                         <div class="mx-auto  bg-green-400  rounded-lg  dark:bg-white calcnumber">
@@ -277,9 +286,9 @@
                         </div>
     
     
-                        <div class="flex space-x-32   mt-6 w-10/12 mx-auto ">
+                        <div class="flex justify-center space-x-32   mt-6 w-10/12 mx-auto ">
                            <button class="reverseBtn">
-                            <svg class="bg-white ml-6 rounded-full" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 3 A 1.0001 1.0001 0 1 0 15 5 C 20.534534 5 25 9.4654664 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 C 5 12.650241 5.8085376 10.496834 7.1601562 8.7929688 L 9 11 L 11 4 L 4 5 L 5.8671875 7.2402344 C 4.086665 9.3350655 3 12.041787 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z"/></svg>
+                            <svg class="bg-white ml rounded-full" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 15 3 A 1.0001 1.0001 0 1 0 15 5 C 20.534534 5 25 9.4654664 25 15 C 25 20.534534 20.534534 25 15 25 C 9.4654664 25 5 20.534534 5 15 C 5 12.650241 5.8085376 10.496834 7.1601562 8.7929688 L 9 11 L 11 4 L 4 5 L 5.8671875 7.2402344 C 4.086665 9.3350655 3 12.041787 3 15 C 3 21.615466 8.3845336 27 15 27 C 21.615466 27 27 21.615466 27 15 C 27 8.3845336 21.615466 3 15 3 z"/></svg>
                            </button>
     
     
@@ -311,96 +320,97 @@
     
     
     
-      <section class="mt-12 pb-10">
-        <div class="bg-green-400 flex flex-row w-10/12 mx-auto space-x-6 rounded-full p-2 tab dark:bg-zinc-800 shadow-2xl ">
-            <div class="ml-8 hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+      <section class="mt-12 pb-">
+
+        <div class="bg-transparent flex flex-row w-10/12 mx-auto space-x-6 rounded-full p-2 tab dark:bg-zinc-800 shadow-2xl lg:w-1/4 justify-center">
+            <div class=" hover:bg-transparent hover:rounded-lg transition duration-700 dark:hover:bg-gray-400 hover:shadow-black hover:shadow-2xl">
               <button class="border-r-2 border-black px-2 soundBtn dark:bg-white dark:opacity-20 dark:rounded-lg">
                 <img class="w-8" src="./img/icons8-speaker-50.png" alt="">
               </button>
             </div>
     
-            <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 hover:bg-transparent hover:">
+            <div class="hover:bg-transparent  hover:rounded-lg transition duration-700 hover:bg-transparent hover:shadow-black hover:shadow-2xl">
                 <button class="border-r-2 border-black px-2 silenceBtn  dark:bg-white dark:opacity-20 dark:rounded-lg">
                   <img class="w-8" src="./img/icons8-shake-phone-50.png" alt="">
                 </button>
               </div>
     
-              <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+              <div class="hover:bg-transparent hover:rounded-lg transition duration-700 dark:hover:bg-gray-400 hover:shadow-black hover:shadow-2xl">
                 <button class="border-r-2 border-black px-2 nightBtn dark:bg-white dark:opacity-20 dark:rounded-lg">
                   <img class="w-8" src="./img/icons8-crescent-moon-50.png" alt="">
                 </button>
               </div>
     
-              <div class="hover:bg-green-700 hover:rounded-lg transition duration-700 dark:hover:bg-gray-400">
+              <div class="hover:bg-transparent  hover:rounded-lg transition duration-700 dark:hover:bg-gray-400 hover:shadow-black hover:shadow-2xl">
                 <button class="colorBtn dark:bg-white dark:opacity-20 dark:rounded-lg">
                     <svg class="w-8 h-8" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 16 16" width="16px" height="16px"><path d="M 9 1 C 7.902344 1 7 1.902344 7 3 L 3 3 L 3 6 C 1.902344 6 1 6.902344 1 8 C 1 9.097656 1.902344 10 3 10 L 3 13 L 7 13 C 7 14.097656 7.902344 15 9 15 C 10.097656 15 11 14.097656 11 13 L 15 13 L 15 9 L 14 9 C 13.441406 9 13 8.558594 13 8 C 13 7.441406 13.441406 7 14 7 L 15 7 L 15 3 L 11 3 C 11 1.902344 10.097656 1 9 1 Z M 9 2 C 9.558594 2 10 2.441406 10 3 L 10 4 L 14 4 L 14 6 C 12.902344 6 12 6.902344 12 8 C 12 9.097656 12.902344 10 14 10 L 14 12 L 10 12 L 10 13 C 10 13.558594 9.558594 14 9 14 C 8.441406 14 8 13.558594 8 13 L 8 12 L 4 12 L 4 9 L 3 9 C 2.441406 9 2 8.558594 2 8 C 2 7.441406 2.441406 7 3 7 L 4 7 L 4 4 L 8 4 L 8 3 C 8 2.441406 8.441406 2 9 2 Z"/></svg>
                 </button>
               </div>
+        </div>
+
+
+          
+        <footer class="mt-6">
+          <div class="flex ">
+            <h1 class="mx-auto text-xl font-garamond font-bold ">
+              made with <span>❤️ </span> by <a href="https://twitter.com/Opeyemil1/">Opeyemil</a>
+            </h1>
+          </div>
+  
+  
+          <div class="flex justify-center space-x-4 mt-2 pb-12">
+            <a href="https://twitter.com/Opeyemil1/">
+  
+              <!--FOR TWITTER-->
+              <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 64 64"
+  style=" fill:#000000;"><path d="M61.932,15.439c-2.099,0.93-4.356,1.55-6.737,1.843c2.421-1.437,4.283-3.729,5.157-6.437	c-2.265,1.328-4.774,2.303-7.444,2.817C50.776,11.402,47.735,10,44.366,10c-6.472,0-11.717,5.2-11.717,11.611	c0,0.907,0.106,1.791,0.306,2.649c-9.736-0.489-18.371-5.117-24.148-12.141c-1.015,1.716-1.586,3.726-1.586,5.847	c0,4.031,2.064,7.579,5.211,9.67c-1.921-0.059-3.729-0.593-5.312-1.45c0,0.035,0,0.087,0,0.136c0,5.633,4.04,10.323,9.395,11.391	c-0.979,0.268-2.013,0.417-3.079,0.417c-0.757,0-1.494-0.086-2.208-0.214c1.491,4.603,5.817,7.968,10.942,8.067	c-4.01,3.109-9.06,4.971-14.552,4.971c-0.949,0-1.876-0.054-2.793-0.165C10.012,54.074,16.173,56,22.786,56	c21.549,0,33.337-17.696,33.337-33.047c0-0.503-0.016-1.004-0.04-1.499C58.384,19.83,60.366,17.78,61.932,15.439"></path></svg>
+            </a>
+  
+  
+            <!---for github-->
+  
+            <a href="https://github.com/Opeyemil-code/">
+              <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 16 16"
+  style=" fill:#000000;"><path d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191406 12.640625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.664063 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.414063 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.640625 4.640625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.640625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.140625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"></path></svg>
+            </a>
+  
+  
+            <!----FOR FACEBOOK-->
+              <a href="">
+                <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      width="24" height="24"
+      viewBox="0 0 50 50"
+      style=" fill:#000000;">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path></svg>
+              </a>
+            
+  
+          </div>
+        </footer>
 
 
 
-              <div class="modal hidden absolute top-48 bottom-80 w-9/12 bg-white p-6 rounded-md shadow-md  justify-center mx-auto shadow-black z-10 ">
-                <button class="close-modal text-6xl font-bold bg-yellow-600">&times;</button>
-                <h1 class="font-bold font-garamond text-2xl">MA SHA'A LLAH  😍</h1>
-                <p class="font-bold font-garamond text-xl">
-                 YOU JUST REACHED YOUR DESIRED FIGURE
-                </p>
-              </div>
-              <div class="overlay hidden top-0 left-0 w-full h-full bg-black z-5"></div>
-           </div>
-
-
-
-        
-
- 
-    
-       
   
       </section>
     
+ <!---MODAL WINDOW-->
+     <div  class="flex justify-center">
+      <div class=" modal hidden absolute top-48 bottom-80 w-9/12 bg-white p-6 rounded-md shadow-md  justify-center mx-auto shadow-black z-10 ">
+        <button class="close-modal text-6xl font-bold bg-yellow-600">&times;</button>
+        <h1 class="font-bold font-garamond text-2xl">MA SHA'A LLAH  😍</h1>
+        <p class="font-bold font-garamond text-xl">
+         YOU JUST REACHED YOUR DESIRED FIGURE
+        </p>
+      </div>
+      <div class="overlay hidden top-0 left-0 w-full h-full bg-black z-5"></div>
+   </div>
+     </div>
     
       
-      <footer>
-        <div class="flex ">
-          <h1 class="mx-auto text-xl font-garamond font-bold ">
-            made with <span>❤️ </span> by <a href="https://twitter.com/Opeyemil1/">Opeyemil</a>
-          </h1>
-        </div>
-
-
-        <div class="flex justify-center space-x-4 mt-4">
-          <a href="https://twitter.com/Opeyemil1/">
-
-            <!--FOR TWITTER-->
-            <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="24" height="24"
-viewBox="0 0 64 64"
-style=" fill:#000000;"><path d="M61.932,15.439c-2.099,0.93-4.356,1.55-6.737,1.843c2.421-1.437,4.283-3.729,5.157-6.437	c-2.265,1.328-4.774,2.303-7.444,2.817C50.776,11.402,47.735,10,44.366,10c-6.472,0-11.717,5.2-11.717,11.611	c0,0.907,0.106,1.791,0.306,2.649c-9.736-0.489-18.371-5.117-24.148-12.141c-1.015,1.716-1.586,3.726-1.586,5.847	c0,4.031,2.064,7.579,5.211,9.67c-1.921-0.059-3.729-0.593-5.312-1.45c0,0.035,0,0.087,0,0.136c0,5.633,4.04,10.323,9.395,11.391	c-0.979,0.268-2.013,0.417-3.079,0.417c-0.757,0-1.494-0.086-2.208-0.214c1.491,4.603,5.817,7.968,10.942,8.067	c-4.01,3.109-9.06,4.971-14.552,4.971c-0.949,0-1.876-0.054-2.793-0.165C10.012,54.074,16.173,56,22.786,56	c21.549,0,33.337-17.696,33.337-33.047c0-0.503-0.016-1.004-0.04-1.499C58.384,19.83,60.366,17.78,61.932,15.439"></path></svg>
-          </a>
-
-
-          <!---for github-->
-
-          <a href="https://github.com/Opeyemil-code/">
-            <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width="24" height="24"
-viewBox="0 0 16 16"
-style=" fill:#000000;"><path d="M 7.5 1 C 3.910156 1 1 3.90625 1 7.488281 C 1 10.355469 2.863281 12.789063 5.445313 13.648438 C 5.769531 13.707031 6 13.375 6 13.125 C 6 12.972656 6.003906 12.789063 6 12.25 C 4.191406 12.640625 3.625 11.375 3.625 11.375 C 3.328125 10.625 2.96875 10.410156 2.96875 10.410156 C 2.378906 10.007813 3.011719 10.019531 3.011719 10.019531 C 3.664063 10.0625 4 10.625 4 10.625 C 4.5 11.5 5.628906 11.414063 6 11.25 C 6 10.851563 6.042969 10.5625 6.152344 10.378906 C 4.109375 10.019531 2.996094 8.839844 3 7.207031 C 3.003906 6.242188 3.335938 5.492188 3.875 4.9375 C 3.640625 4.640625 3.480469 3.625 3.960938 3 C 5.167969 3 5.886719 3.871094 5.886719 3.871094 C 5.886719 3.871094 6.453125 3.625 7.496094 3.625 C 8.542969 3.625 9.105469 3.859375 9.105469 3.859375 C 9.105469 3.859375 9.828125 3 11.035156 3 C 11.515625 3.625 11.355469 4.640625 11.167969 4.917969 C 11.683594 5.460938 12 6.210938 12 7.207031 C 12 8.839844 10.890625 10.019531 8.851563 10.375 C 8.980469 10.570313 9 10.84375 9 11.25 C 9 12.117188 9 12.910156 9 13.125 C 9 13.375 9.226563 13.710938 9.558594 13.648438 C 12.140625 12.785156 14 10.355469 14 7.488281 C 14 3.90625 11.089844 1 7.5 1 Z"></path></svg>
-          </a>
-
-
-          <!----FOR FACEBOOK-->
-            <a href="">
-              <svg class="bg-white rounded-lg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-    width="24" height="24"
-    viewBox="0 0 50 50"
-    style=" fill:#000000;">    <path d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"></path></svg>
-            </a>
-          
-
-        </div>
-      </footer>
+      
 
         
     
