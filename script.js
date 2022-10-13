@@ -26,6 +26,7 @@ const confirmCount = document.querySelector('.confirmCount')
 const confirmButton = document.querySelector('.confirmButton')
 const opeyemi = document.querySelector('.opeyemi')
 const modal = document.querySelector('.modal')
+const audio = new Audio('music folder/387935__whatthes__tap1.mp3')
 
 console.log(typeof numCount)
 
@@ -142,7 +143,13 @@ for (let i = 0; i < changeColorbtn.length; i++) {
 }
 
 
+//ADDED SOUND TO A BUTTON
 
+counterBtn.addEventListener(
+    'click', function (params) {
+        audio.play()
+    }
+)
 
 
 
@@ -162,6 +169,7 @@ function handler(params) {
 counterBtn.addEventListener(
     'click', handler
 )
+
 
 
 
