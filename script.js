@@ -18,7 +18,7 @@ const divBody = document.querySelector('.subbody')
 const savedDhikr = document.querySelector('.saved')
 const bgchange = document.querySelectorAll('.bgchange')
 const bgLightChange = document.querySelectorAll('.light')
-const numCount = document.querySelector('.numcount').textContent
+let numCount = document.querySelector('.numcount').textContent
 const counterBtn = document.querySelector('.presscount')
 const deact = document.querySelector('.deactivate')
 const reverseBtn = document.querySelector('.reverseBtn')
@@ -27,7 +27,6 @@ const confirmButton = document.querySelector('.confirmButton')
 const opeyemi = document.querySelector('.opeyemi')
 const modal = document.querySelector('.modal')
 const audio = new Audio('music folder/387935__whatthes__tap1.mp3')
-
 console.log(typeof numCount)
 
 
@@ -158,12 +157,25 @@ counterBtn.addEventListener(
 /***********************************************
  * *********************************************
  */
-let count = 0;
-
+ 
+ const inputNumber = document.querySelector('.inputNum')
+    let count = 0;
+console.log(typeof count)
 function handler(params) {
     count++
-    document.querySelector('.numcount').textContent = count 
-    console.log(numCount)
+    console.log(typeof numCount)
+   document.querySelector('.numcount').innerHTML = count
+   
+    
+    console.log(typeof count)
+    let strTonum = parseInt(numCount,10)
+    console.log(inputNumber.value)
+
+   if (strTonum = inputNumber.value) {
+    modal.classList.remove('hidden')
+   } else {
+    modal.classList.add('hidden')
+   }
 }
 
 counterBtn.addEventListener(
@@ -207,18 +219,6 @@ reverseBtn.addEventListener(
  * *********************************************
  */
 
-function matchFigure(params) {
-    if (confirmCount == numCount) {
-        modal.classList.remove('hidden')
-    }
-}
 
 
-confirmButton.addEventListener(
-    'click', matchFigure.textContent
-)
-
-
-
-
-    
+ console.log(typeof confirmCount)
