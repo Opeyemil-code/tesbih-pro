@@ -18,7 +18,6 @@ const divBody = document.querySelector('.subbody')
 const savedDhikr = document.querySelector('.saved')
 const bgchange = document.querySelectorAll('.bgchange')
 const bgLightChange = document.querySelectorAll('.light')
-let numCount = document.querySelector('.numcount').textContent
 const counterBtn = document.querySelector('.presscount')
 const deact = document.querySelector('.deactivate')
 const reverseBtn = document.querySelector('.reverseBtn')
@@ -27,8 +26,9 @@ const confirmButton = document.querySelector('.confirmButton')
 const opeyemi = document.querySelector('.opeyemi')
 const modal = document.querySelector('.modal')
 const audio = new Audio('music folder/387935__whatthes__tap1.mp3')
-console.log(typeof numCount)
-
+//console.log(typeof numCount)
+//music folder\387935__whatthes__tap1.mp3
+//music folder\387935__whatthes__tap1.mp3
 
 
 //THIS IS FOR THE MENU
@@ -152,39 +152,50 @@ counterBtn.addEventListener(
 
 
 
-//FUNCTIONALITY FOR THE COUNTER BUTTON
+
+
+
+
 
 /***********************************************
  * *********************************************
  */
- 
- const inputNumber = document.querySelector('.inputNum')
-    let count = 0;
-console.log(typeof count)
-function handler(params) {
-    count++
-    console.log(typeof numCount)
-   document.querySelector('.numcount').innerHTML = count
-   
-    
-    console.log(typeof count)
-    let strTonum = parseInt(numCount,10)
-    console.log(inputNumber.value)
+ //FUNCTIONALITY TO CHECK INPUT CALUE
+ const inputNumber = document.querySelector('.inputNum');
+ let inputN = 0;
+function inputValue(params) {
+    inputN = inputNumber.value
+} 
 
-   if (strTonum = inputNumber.value) {
-    modal.classList.remove('hidden')
-   } else {
-    modal.classList.add('hidden')
-   }
-}
+inputNumber.addEventListener('change',inputValue);
+
+
+//FUNCTIONALITY FOR THE COUNTER BUTTON AND FOR MODAL WINDOWS
+     
+    let count = 0;
+    const secondAudio = new Audio ('music folder/azan1.mp3') 
+
+    function handler(params) {
+        count++
+        document.querySelector('.numcount').innerHTML = count
+        
+         if (count == inputN) {
+            modal.classList.remove('hidden');
+            secondAudio.play()
+         } else {
+            
+         }
+         
+    }
 
 counterBtn.addEventListener(
     'click', handler
-)
+);
 
 
 
 
+//RESET BUTTON
 function reset(params) {
      count= 0;
     document.querySelector('.numcount').textContent = count; 
@@ -211,14 +222,16 @@ reverseBtn.addEventListener(
 )
 
 
+//FUNCTIONALITY FOR CLOSING MODFAL WINDOW AND STOPPING AUDIO
 
 
-//FUNCTIONALITY FOR SETTING A FIGURE
+const closeModal = document.querySelector('.close-modal')
 
-/***********************************************
- * *********************************************
- */
+function closeWindow(params) {
+    modal.classList.add('hidden');
+    secondAudio.pause()
+}
 
-
-
- console.log(typeof confirmCount)
+closeModal.addEventListener(
+    'click', closeWindow
+)
