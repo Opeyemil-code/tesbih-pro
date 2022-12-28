@@ -222,7 +222,9 @@ reverseBtn.addEventListener(
 )
 
 
-//FUNCTIONALITY FOR CLOSING MODFAL WINDOW AND STOPPING AUDIO
+//FUNCTIONALITY FOR CLOSING MODFAL WINDOW AND STOPPING AUDIO////
+///////////////////////////////////
+/////////////////////////////////////////
 
 
 const closeModal = document.querySelector('.close-modal')
