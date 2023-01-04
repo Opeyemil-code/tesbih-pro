@@ -211,6 +211,7 @@ deact.addEventListener(
 
 function reverse(params) {
     count--
+    count = Math.max(count,0)
     document.querySelector('.numcount').textContent = count;
    
     
