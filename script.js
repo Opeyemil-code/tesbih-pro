@@ -46,10 +46,17 @@ toggleBtn.addEventListener('click', toggleMenu)
  * *********************************************
  */
 
+
+
 //THIS IS FOR THE NIGHT MODE BUTTON
 function night(params) {
-    body.classList.toggle('dark')
+    body.classList.toggle('dark');
+   // document.querySelectorAll('.colorBtn')[0].disabled = 'true';
+   // document.querySelectorAll('.colorBtn')[1].disabled = 'true';
+    
 }
+
+
 for (let i = 0; i < nightModeBtn.length; i++) {
     nightModeBtn[i].addEventListener(
         'click', night
@@ -102,6 +109,7 @@ function secondaryChange(params) {
 
 
 function setter(params) {
+    
     document.querySelector('.subbody').style.backgroundColor = diffColors[numCounter]
     document.querySelector('.bigcircle').style.backgroundColor  = diffColors[numCounter];
      document.querySelector('.tab').style.backgroundColor  = diffColors[numCounter];
@@ -109,30 +117,28 @@ function setter(params) {
      document.querySelector('.counter').style.backgroundColor  = diffColors[numCounter];
      document.querySelector('.calcnumber').style.backgroundColor  = 'white';
      document.querySelector('.saved').style.backgroundColor = diffColors[numCounter]
-     
+
      secondaryChange()
 }
 
 
 
-
+//CHANGING OF BACKGROUND 
 //LOOP FOR ELEMENT TO BE CHANGED
 function backGroundChange() {
-    if (numCounter < diffColors.length-1) {
-        numCounter++
-        console.log(numCounter)
-        setter()
-       
-        
-    } 
-    else{
-        
-        numCounter = 0
-        setter()
-        
-    }
+        if (numCounter < diffColors.length-1) {
+            numCounter++
+            console.log(numCounter)
+            setter()
+            
+        } 
+        else{
+            
+            numCounter = 0
+            setter()
+            
+        }    
 }  
-
 //CLICK EVENT TO MAKE THEM HAPPEN
 for (let i = 0; i < changeColorbtn.length; i++) {
     changeColorbtn[i].addEventListener(
