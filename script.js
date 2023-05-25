@@ -243,4 +243,4 @@ function closeWindow(params) {
 
 closeModal.addEventListener(
     'click', closeWindow
-)
+) 
